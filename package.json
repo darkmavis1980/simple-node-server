@@ -1,6 +1,6 @@
 {
   "name": "microserver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Micro HTTP Server",
   "main": "server.js",
   "author": "Alessio Michelini",
