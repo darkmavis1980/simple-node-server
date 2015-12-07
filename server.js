@@ -3,6 +3,7 @@ app = express();
 
 var config = {
   port: 7999,
+  host: '127.0.0.1',
   publicRoot: __dirname + '/public'
 };
 
@@ -11,5 +12,7 @@ var config = {
 app.use(express.static(config.publicRoot));
 
 //start the server
-app.listen(config.port);
-console.log('Listening on port ' + config.port);
+app.listen(config.port, config.host, function(){
+  console.log('Listening at the address ' + config.host + ':' + config.port);
+});
+
